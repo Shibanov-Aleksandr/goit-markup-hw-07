@@ -147,7 +147,11 @@ img {
 .navigation__link:hover, .navigation__link:focus {
   color: var(--accent-color);
 }
-.navigation__link.active::after {
+
+.navigation__list--active {
+  color: var(--accent-color);
+}
+.navigation__list--active::after {
   color: var(--accent-color);
   position: absolute;
   content: "";
@@ -158,12 +162,8 @@ img {
   border-radius: 2px;
   background-color: var(--accent-color-bg);
 }
-.navigation__link::after .active {
+::after .navigation__list--active {
   opacity: 0;
-}
-
-.navigation__list .active {
-  color: var(--accent-color);
 }
 
 .contacts__list {
@@ -586,7 +586,7 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-.filter-list__button.active {
+.filter-list__button--active {
   background-color: var(--accent-color-bg);
   color: var(--main-color-darck-fon);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);

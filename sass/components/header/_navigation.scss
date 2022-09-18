@@ -24,7 +24,11 @@
   &:focus {
     color: var(--accent-color);
   }
-  &.active::after {
+}
+
+.navigation__list--active {
+  color: var(--accent-color);
+  &::after {
     color: var(--accent-color);
     position: absolute;
     content: "";
@@ -35,11 +39,7 @@
     border-radius: 2px;
     background-color: var(--accent-color-bg);
   }
-  &::after .active {
+  ::after & {
     opacity: 0;
   }
-}
-
-.navigation__list .active {
-  color: var(--accent-color);
 }
