@@ -148,10 +148,10 @@ img {
   color: var(--accent-color);
 }
 
-.navigation__list--active {
+.navigation__link--active {
   color: var(--accent-color);
 }
-.navigation__list--active::after {
+.navigation__link--active::after {
   color: var(--accent-color);
   position: absolute;
   content: "";
@@ -162,7 +162,7 @@ img {
   border-radius: 2px;
   background-color: var(--accent-color-bg);
 }
-::after .navigation__list--active {
+::after .navigation__link--active {
   opacity: 0;
 }
 
