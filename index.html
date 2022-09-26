@@ -27,9 +27,13 @@
     <!--===================HEADER===================-->
     <header class="page__header">
       <div class="container box__header">
-        <a href="index.html" class="logo"
+        <a href="index.html" class="logo logo-page-header__tablet"
           ><span class="logo__text">Web</span>Studio</a
-        >
+        ><button type="button" class="mobile-menu__button-open" data-menu-open>
+          <svg class="mobile-menu__icon-open" width="40" height="40">
+            <use href="./images/sprite/symbol-defs.svg#menu"></use>
+          </svg>
+        </button>
 
         <nav class="navigatio">
           <ul class="navigation__list list">
@@ -70,13 +74,36 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__button-close">
+            <svg width="40" height="40">
+              <use
+                href="./images/sprite/symbol-defs.svg#close"
+                data-menu-close
+              ></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-navigation__list list">
+            <li class="mobile-menu-navigation__item">
+              <a class="mobile-menu-navigation__link">Студія</a>
+            </li>
+            <li class="mobile-menu-navigation__item">
+              <a class="mobile-menu-navigation__link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu-navigation__item">
+              <a class="mobile-menu-navigation__link">Контакти</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <!--===================/HEADER===================-->
     <!-- ===================MAIN=================== -->
 
     <main>
       <!--===================HERO===================-->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero__title">
             Ефективні рішення<br />
@@ -86,11 +113,11 @@
             Замовити послугу
           </button>
         </div>
-      </section>
+      </section> -->
       <!--===================/HERO===================-->
 
       <!--===================PRIVILEGES===================-->
-      <section class="privileges section">
+      <!-- <section class="privileges section">
         <h2 class="privileges__text visually-hidden">Чим ми кращі</h2>
         <div class="container">
           <ul class="privileges__list list">
@@ -144,11 +171,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--===================/PRIVILEGES===================-->
 
       <!--===================WE-DO===================-->
-      <section class="products section">
+      <!-- <section class="products section">
         <div class="container">
           <h2 class="products-title title">Чим ми займаємося</h2>
           <ul class="products__list list">
@@ -187,11 +214,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--===================/WE-DO===================-->
 
       <!--===================TEAM===================-->
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="container">
           <h2 class="team__title title">Наша команда</h2>
           <ul class="team__list list">
@@ -442,11 +469,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--===================/TEAM===================-->
 
       <!--===================CLIENTS===================-->
-      <section class="clients section">
+      <!-- <section class="clients section">
         <div class="container">
           <h2 class="clients__title title">Постійні клієнти</h2>
           <ul class="clients__list list">
@@ -500,13 +527,13 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--===================CLIENTS===================-->
     </main>
     <!--===================/MAIN===================-->
 
     <!--===================FOOTER===================-->
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
       <div class="container footer-box">
         <div class="box-addres">
           <a href="index.html" class="box-addres__link"
@@ -589,7 +616,7 @@
           <button class="subscription__btn" type="submit">Підписатися</button>
         </form>
       </div>
-    </footer>
+    </footer> -->
     <!--===================/FOOTER===================-->
 
     <!--===================MODAL-WINDOW===================-->
@@ -678,5 +705,6 @@
     </div>
     <!--===================/MODAL-WINDOW===================-->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
